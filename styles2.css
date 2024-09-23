@@ -1,0 +1,55 @@
+.main-container {
+    background-color: darkslateblue;
+    display: flex;
+}
+.main-container h1 {
+    color: white;
+}
+.login-container {
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    margin: 20px 0;
+    flex-direction: column;
+}
+.branding-container {
+    width: 900px;
+    height: fit-content;
+    background-color: gainsboro;
+}
+.login-fields-container {
+    width: 900px;
+    height: fit-content;
+    background-color: gainsboro;
+    margin-top: 10px;
+}
+.username-field-container {
+    width: 800px;
+    height: fit-content;
+    background-color: darkslateblue;
+    margin-top: 5px;
+}
+.password-field-container {
+    width: 800px;
+    height: fit-content;
+    background-color: darkslateblue;
+    margin-top: 5px;
+}
+.submit-fields-input-container {
+    width: 800px;
+    height: fit-content;
+    background-color: darkslateblue;
+    margin-top: 5px;
+}
+.forgot-info-container {
+    width: 800px;
+    height: fit-content;
+    background-color: darkslateblue;
+    margin-top: 5px;
+}
+
+.two-children-row {
+    width: 700px;
+    height: fit-content;
+    background-color: seagreen;
+}
