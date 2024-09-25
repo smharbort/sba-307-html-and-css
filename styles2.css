@@ -1,55 +1,81 @@
+body {
+    background-image: url("./assets/wood-background-img.jpg");
+}
+
 .main-container {
-    background-color: darkslateblue;
+    background-color: rgba(71, 61, 139, 0.719);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
-.main-container h1 {
-    color: white;
-}
+
 .login-container {
-    width: 1000px;
-    height: 800px;
+    width: 900px;
+    height: 725px;
     background-color: white;
-    margin: 20px 0;
+    margin: 40px 0;
     flex-direction: column;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    border-radius: 4%
 }
-.branding-container {
-    width: 900px;
+.custom-branding-container {
+    width: fit-content;
     height: fit-content;
-    background-color: gainsboro;
 }
+
+.brand-logo-container {
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo-container h1 {
+    align-self:last baseline;
+}
+
+#brand-image {
+    width: 100px;
+    height: 100px;
+}
+
 .login-fields-container {
-    width: 900px;
-    height: fit-content;
+    width: 825px;
+    height: 425px;
     background-color: gainsboro;
-    margin-top: 10px;
+    margin: 20px auto;
+    border-radius: 1%;
 }
-.username-field-container {
-    width: 800px;
-    height: fit-content;
-    background-color: darkslateblue;
-    margin-top: 5px;
-}
-.password-field-container {
-    width: 800px;
-    height: fit-content;
-    background-color: darkslateblue;
-    margin-top: 5px;
-}
-.submit-fields-input-container {
-    width: 800px;
-    height: fit-content;
-    background-color: darkslateblue;
-    margin-top: 5px;
-}
+
 .forgot-info-container {
     width: 800px;
     height: fit-content;
-    background-color: darkslateblue;
-    margin-top: 5px;
+    background-color: inherit;
 }
 
-.two-children-row {
-    width: 700px;
-    height: fit-content;
-    background-color: seagreen;
+#login-fields-submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#login-fields-submit-btn input {
+    padding: 8px 25px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+#login-fields-submit-btn input:hover {
+    padding: 8px 25px;
+    background-color: gainsboro;
+    color: darkslateblue;
+    border: 1px solid darkslateblue;
+}
+
+.forgot-info-link {
+    display: flex;
+    justify-content: center;
+    color: darkslateblue;
+    margin-bottom: 0px;
 }
