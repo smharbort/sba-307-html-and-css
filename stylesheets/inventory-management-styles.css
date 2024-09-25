@@ -51,3 +51,14 @@ body {
 #settings-wheel:hover {
     transform: rotate(1turn);
 }
+
+/* .qr-code-generator-card {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+#qr-code-generator-container {
+    width: fit-content;
+    display: inherit;
+    justify-content: inherit;
+} */
