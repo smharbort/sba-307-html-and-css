@@ -2,6 +2,8 @@ body {
     background-image: url("../assets/wood-background-img.jpg");
 }
 
+
+
 .custom-navbar {
     height: fit-content;
     background-color: rgba(71, 61, 139, 0.719);
@@ -13,40 +15,39 @@ body {
 .custom-navbar button {
     color: white;
 }
+.brand-logo-container {
+    display: inline-flex;
+}
+.brand-logo-container h3 {
+    align-self:last baseline;
+}
+#brand-image {
+    width: 50px;
+    height: 50px;
+}
+
+
 
 .custom-offcanvas {
     background-color: rgba(71, 61, 139, 0.719);
 }
+
+
 
 .main-container {
     background-color: gainsboro;
     height: 825px;
     border-radius: 2%;
 }
-
 .card {
     background-color: white;
     height: 200px;
     margin-top: 25px;
 }
-
 #settings-wheel {
     margin-top: 25px;
     transition-duration: 2s;
 }
 #settings-wheel:hover {
     transform: rotate(1turn);
-}
-
-.brand-logo-container {
-    display: inline-flex;
-}
-
-.brand-logo-container h3 {
-    align-self:last baseline;
-}
-
-#brand-image {
-    width: 50px;
-    height: 50px;
 }
