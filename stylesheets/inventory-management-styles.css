@@ -1,0 +1,27 @@
+body {
+    background-image: url("../assets/wood-background-img.jpg");
+}
+
+.custom-navbar {
+    height: 75px;
+    color: white;
+}
+
+.custom-offcanvas {
+    background-color: rgba(71, 61, 139, 0.719);
+}
+
+.main-container {
+    background-color: white;
+    height: 800px;
+}
+
+.custom-row-1 {
+    height: 300px;
+}
+.custom-row-2 {
+    height: 300px;
+}
+.custom-row-3 {
+    height: 300px;
+}

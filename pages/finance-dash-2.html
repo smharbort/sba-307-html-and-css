@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="../stylesheets/finance-dash-styles.css">
     </head>
     <body>
-        <nav class="navbar sticky-top custom-navbar"></nav>
+        <nav class="navbar sticky-top custom-navbar">
             <div class="container">
 
                 <!-- CLICK BUTTON FOR LEFT OFFCANVAS MENU -->
-                <button class="btn custom-navbar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+                <button class="btn custom-navbar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="margin-right: auto;">Menu</button>
                 
                 <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                     
@@ -62,76 +62,90 @@
                     </div>
                 </div>
 
+                <!-- <button class="btn custom-navbar-btn" type="button" style="margin-right: auto;"><a href="./index.html">Optify</a></button> -->
+
                 <!-- OTHER NAVBAR BUTTONS -->
-                <button class="btn custom-navbar-btn" type="button"><a href="./index.html">Optify</a></button>
-                <button class="btn custom-navbar-btn" type="button"><a href="./login-page.html">Login</a></button>
+                <div class="container custom-branding-container">
+                    <div class="container brand-logo-container">
+                        <a href="index.html"><img src="../assets/O-Letter-PNG-Clipart (1).png" alt="O" id="brand-image"></a>
+                        <h3>ptify</h3>
+                    </div>
+                </div>
                 <button class="btn custom-navbar-btn" type="button"><a href="#">Sign Up</a></button>
             </div>
         </nav>
         
         <!-- Interactive Dashboard Pad -->
-        <div style="margin-right: 100px;" class="container-xl text-center main-container">
+        <div class="container-fluid text-center main-container">
             <div class="row custom-row-1">
-                <div class="col-4">To-Do</div>
+                <div class="col-4">
+                    <div class="card">To-Do</div>
+                </div>
                 <div class="col-1"></div>
-                <div class="col-6">Budgets</div>
-                <div class="col-1">Settings</div>
+                <div class="col-6">
+                    <div class="card">Budgets</div>
+                </div>
+                <div class="col-1">
+                    <a href="#"><img src="../assets/Gear-PNG-Free-Image.png" alt="settings gear icon" height="75px" width="75px" id="settings-wheel"></a>
+                </div>
             </div>
             <div class="row custom-row-2">
-                <div class="col-12">Charts Dash</div>
+                <div class="col-12">
+                    <div class="card">Charts Dash</div>
+                </div>
             </div>
             <div class="row custom-row-3">
                 <div class="col-7">
-
-
-                    <table>
-                        <thead>
-                            <td>This</td>
-                            <td>table</td>
-                            <td>represents</td>
-                            <td>bank</td>
-                            <td>statement</td>
-                        </thead>
-                        <tr>
-                            <td>data</td>
-                            <td>accessed</td>
-                            <td>by</td>
-                            <td>querying</td>
-                            <td>the</td>
-                        </tr>
-                        <tr>
-                            <td>bank's</td>
-                            <td>API</td>
-                            <td>with</td>
-                            <td colspan="2">authentication,</td>
-                        </tr>
-                        <tr>
-                            <td>by</td>
-                            <td>using</td>
-                            <td>Playwright,</td>
-                            <td>or</td>
-                            <td>by</td>
-                        </tr>
-                        <tr>
-                            <td>ripping</td>
-                            <td>data</td>
-                            <td>from</td>
-                            <td>a</td>
-                        </tr>
-                        <tfoot>
-                            <td>manually</td>
-                            <td colspan="2">downloaded</td>
-                            <td>CSV</td>
-                            <td>file</td>
-                        </tfoot>
-                    </table>
-
-
+                    <div class="card">
+                        <table>
+                            <thead>
+                                <td>This</td>
+                                <td>table</td>
+                                <td>represents</td>
+                                <td>bank</td>
+                                <td>statement</td>
+                            </thead>
+                            <tr>
+                                <td>data</td>
+                                <td>accessed</td>
+                                <td>by</td>
+                                <td>querying</td>
+                                <td>the</td>
+                            </tr>
+                            <tr>
+                                <td>bank's</td>
+                                <td>API</td>
+                                <td>with</td>
+                                <td colspan="2">authentication,</td>
+                            </tr>
+                            <tr>
+                                <td>by</td>
+                                <td>using</td>
+                                <td>Playwright,</td>
+                                <td>or</td>
+                                <td>by</td>
+                            </tr>
+                            <tr>
+                                <td>ripping</td>
+                                <td>data</td>
+                                <td>from</td>
+                                <td>a</td>
+                            </tr>
+                            <tfoot>
+                                <td>manually</td>
+                                <td colspan="2">downloaded</td>
+                                <td>CSV</td>
+                                <td>file</td>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-3">
-                    <div>Investments Portfolios</div>
-                    <div>Retirement Portfolios</div>
+                    <div class="card">
+                        <div>Investments</div>
+                        <div>Retirement Portfolios</div>
+                    </div>
                 </div>
                 <div class="col-1"></div>
             </div>
