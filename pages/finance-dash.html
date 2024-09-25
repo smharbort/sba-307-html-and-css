@@ -9,129 +9,156 @@
         <link rel="stylesheet" href="../stylesheets/finance-dash-styles.css">
     </head>
     <body>
-        <nav class="navbar sticky-top custom-navbar"></nav>
-            <div class="container">
+        <nav class="navbar sticky-top custom-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2">
+                        <!-- CLICK BUTTON FOR LEFT OFFCANVAS MENU -->
+                        <button class="btn custom-navbar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="margin-right: auto;">Menu</button>
+                                        
+                        <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            
+                            <div class="custom-offcanvas-menu-options">
 
-                <!-- CLICK BUTTON FOR LEFT OFFCANVAS MENU -->
-                <button class="btn custom-navbar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
-                
-                <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                    
-                    <div class="custom-offcanvas-menu-options">
-
-                        <!-- USER PROFILE & IMAGE -->
-                        <div class="container">
-                            <a class="" type="button" href="#">User Profile</a>
-                        </div>
-                    
-                        <!-- DASHBOARD OPTIONS -->
-                        <div class="container offcanvas-dashboard-options text-center">
-                            <h3>Dashboards</h3>
-                            <div>
-                                <h6>Tasks</h6>
-                                <select name="Tasks">
-                                    <option value=""><a>Note View</a></option>
-                                    <option value=""><a>Kanban</a></option>
-                                </select>
-                            </div>
-                            <div>
-                                <h6><a href="./finance-dash.html">Finance</a></h6>
-                                <select name="Finance">
-                                    <option value=""><a>To-Do</a></option>
-                                    <option value=""><a>Settings</a></option>
-                                    <option value=""><a>Charts</a></option>
-                                    <option value=""><a>Budget</a></option>
-                                    <option value=""><a>Statements</a></option>
-                                    <option value=""><a>Investments</a></option>
-                                    <option value=""><a>Retirement Portfolio</a></option>
-                                </select>
-                            </div>
-                            <div>
-                                <h6><a href="./inventory-management-dash.html">Inventory Management</a></h6>
-                                <select name="Inventory Management">
-                                    <option value=""><a>To-Do</a></option>
-                                    <option value=""><a>Settings</a></option>
-                                    <option value=""><a>Search</a></option>
-                                    <option value=""><a>View/Manage Locations</a></option>
-                                    <option value=""><a>Statistics</a></option>
-                                    <option value=""><a>On-hands</a></option>
-                                    <option value=""><a>QR Code Generator</a></option>
-                                </select>
+                                <!-- USER PROFILE & IMAGE -->
+                                <div class="container">
+                                    <a class="" type="button" href="#">User Profile</a>
+                                </div>
+                            
+                                <!-- DASHBOARD OPTIONS -->
+                                <div class="container offcanvas-dashboard-options text-center">
+                                    <h3>Dashboards</h3>
+                                    <div>
+                                        <h6>Tasks</h6>
+                                        <select name="Tasks">
+                                            <option value=""><a>Note View</a></option>
+                                            <option value=""><a>Kanban</a></option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <h6><a href="./finance-dash.html">Finance</a></h6>
+                                        <select name="Finance">
+                                            <option value=""><a>To-Do</a></option>
+                                            <option value=""><a>Settings</a></option>
+                                            <option value=""><a>Charts</a></option>
+                                            <option value=""><a>Budget</a></option>
+                                            <option value=""><a>Statements</a></option>
+                                            <option value=""><a>Investments</a></option>
+                                            <option value=""><a>Retirement Portfolio</a></option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <h6><a href="./inventory-management-dash.html">Inventory Management</a></h6>
+                                        <select name="Inventory Management">
+                                            <option value=""><a>To-Do</a></option>
+                                            <option value=""><a>Settings</a></option>
+                                            <option value=""><a>Search</a></option>
+                                            <option value=""><a>View/Manage Locations</a></option>
+                                            <option value=""><a>Statistics</a></option>
+                                            <option value=""><a>On-hands</a></option>
+                                            <option value=""><a>QR Code Generator</a></option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="container custom-branding-container">
+                            <div class="container brand-logo-container">
+                                <a href="index.html"><img src="../assets/O-Letter-PNG-Clipart (1).png" alt="O" id="brand-image"></a>
+                                <h3>ptify</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <button class="btn custom-navbar-btn" type="button"><a href="./login-page.html">Login</a></button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn custom-navbar-btn" type="button"><a href="#">Sign Up</a></button>
+
+                    </div>
                 </div>
+                <!-- <button class="btn custom-navbar-btn" type="button" style="margin-right: auto;"><a href="./index.html">Optify</a></button> -->
 
                 <!-- OTHER NAVBAR BUTTONS -->
-                <button class="btn custom-navbar-btn" type="button"><a href="./index.html">Optify</a></button>
-                <button class="btn custom-navbar-btn" type="button"><a href="./login-page.html">Login</a></button>
-                <button class="btn custom-navbar-btn" type="button"><a href="#">Sign Up</a></button>
             </div>
         </nav>
         
         <!-- Interactive Dashboard Pad -->
-        <div style="margin-right: 100px;" class="container-xl text-center main-container">
+        <div class="container-fluid text-center main-container">
             <div class="row custom-row-1">
-                <div class="col-4">To-Do</div>
+                <div class="col-4">
+                    <div class="card"><h3>To-Do</h3></div>
+                </div>
                 <div class="col-1"></div>
-                <div class="col-6">Budgets</div>
-                <div class="col-1">Settings</div>
+                <div class="col-6">
+                    <div class="card"><h3>Budgets</h3></div>
+                </div>
+                <div class="col-1">
+                    <a href="#"><img src="../assets/Gear-PNG-Free-Image.png" alt="settings gear icon" height="75px" width="75px" id="settings-wheel"></a>
+                </div>
             </div>
             <div class="row custom-row-2">
-                <div class="col-12">Charts Dash</div>
+                <div class="col-12">
+                    <div class="card"><h3>Charts Dash</h3></div>
+                </div>
             </div>
             <div class="row custom-row-3">
                 <div class="col-7">
-
-
-                    <table>
-                        <thead>
-                            <td>This</td>
-                            <td>table</td>
-                            <td>represents</td>
-                            <td>bank</td>
-                            <td>statement</td>
-                        </thead>
-                        <tr>
-                            <td>data</td>
-                            <td>accessed</td>
-                            <td>by</td>
-                            <td>querying</td>
-                            <td>the</td>
-                        </tr>
-                        <tr>
-                            <td>bank's</td>
-                            <td>API</td>
-                            <td>with</td>
-                            <td colspan="2">authentication,</td>
-                        </tr>
-                        <tr>
-                            <td>by</td>
-                            <td>using</td>
-                            <td>Playwright,</td>
-                            <td>or</td>
-                            <td>by</td>
-                        </tr>
-                        <tr>
-                            <td>ripping</td>
-                            <td>data</td>
-                            <td>from</td>
-                            <td>a</td>
-                        </tr>
-                        <tfoot>
-                            <td>manually</td>
-                            <td colspan="2">downloaded</td>
-                            <td>CSV</td>
-                            <td>file</td>
-                        </tfoot>
-                    </table>
-
-
+                    <div class="card">
+                        <h3>Statements</h3>
+                        <table>
+                            <thead>
+                                <td>This</td>
+                                <td>table</td>
+                                <td>represents</td>
+                                <td>bank</td>
+                                <td>statement</td>
+                            </thead>
+                            <tr>
+                                <td>data</td>
+                                <td>accessed</td>
+                                <td>by</td>
+                                <td>querying</td>
+                                <td>the</td>
+                            </tr>
+                            <tr>
+                                <td>bank's</td>
+                                <td>API</td>
+                                <td>with</td>
+                                <td colspan="2">authentication,</td>
+                            </tr>
+                            <tr>
+                                <td>by</td>
+                                <td>using</td>
+                                <td>Playwright,</td>
+                                <td>or</td>
+                                <td>by</td>
+                            </tr>
+                            <tr>
+                                <td>ripping</td>
+                                <td>data</td>
+                                <td>from</td>
+                                <td>a</td>
+                            </tr>
+                            <tfoot>
+                                <td>manually</td>
+                                <td colspan="2">downloaded</td>
+                                <td>CSV</td>
+                                <td>file</td>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-3">
-                    <div>Investments Portfolios</div>
-                    <div>Retirement Portfolios</div>
+                    <div class="card">
+                        <div><h5>Investments</h5></div>
+                        <div><h5>Retirement Portfolios</h5></div>
+                    </div>
                 </div>
                 <div class="col-1"></div>
             </div>
