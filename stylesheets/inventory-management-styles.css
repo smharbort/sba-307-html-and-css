@@ -58,7 +58,7 @@ body {
     justify-content: center;
 }
 
-div [class="card onhands-card"] {
+div [class="stylish card onhands-card"] {
     transition: height 3s;
 }
 .onhands-card:hover {
