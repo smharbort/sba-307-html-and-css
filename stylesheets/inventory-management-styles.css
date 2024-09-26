@@ -29,7 +29,7 @@ body {
 
 
 .custom-offcanvas {
-    background-color: rgba(71, 61, 139, 0.719);
+    background-color: rgb(60, 75, 35);
 }
 
 
@@ -52,13 +52,15 @@ body {
     transform: rotate(1turn);
 }
 
-/* .qr-code-generator-card {
+.qr-code-generator-card {
     height: 300px;
     display: flex;
     justify-content: center;
 }
-#qr-code-generator-container {
-    width: fit-content;
-    display: inherit;
-    justify-content: inherit;
-} */
+
+div [class="card onhands-card"] {
+    transition: height 3s;
+}
+.onhands-card:hover {
+    height: 300px;
+}

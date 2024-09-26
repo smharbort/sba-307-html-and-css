@@ -1,0 +1,81 @@
+body {
+    background-image: url("../assets/wood-background-img.jpg");
+}
+
+.main-container {
+    background-color: rgba(71, 61, 139, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.login-container {
+    width: 900px;
+    height: 800px;
+    background-color: white;
+    margin: 35px 0;
+    flex-direction: column;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    border-radius: 4%
+}
+.custom-branding-container {
+    width: fit-content;
+    height: fit-content;
+}
+
+.brand-logo-container {
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo-container h1 {
+    align-self:last baseline;
+}
+
+#brand-image {
+    width: 100px;
+    height: 100px;
+}
+
+.login-fields-container {
+    width: 825px;
+    height: 575px;
+    background-color: gainsboro;
+    margin: 20px auto;
+    border-radius: 1%;
+}
+
+.forgot-info-container {
+    width: 800px;
+    height: fit-content;
+    background-color: inherit;
+}
+
+#login-fields-submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#login-fields-submit-btn input {
+    padding: 8px 25px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+#login-fields-submit-btn input:hover {
+    padding: 8px 25px;
+    background-color: gainsboro;
+    color: darkslateblue;
+    border: 1px solid darkslateblue;
+}
+
+.forgot-info-link {
+    display: flex;
+    justify-content: center;
+    color: darkslateblue;
+    margin-bottom: 0px;
+}

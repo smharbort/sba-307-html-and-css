@@ -9,13 +9,17 @@
         <link rel="stylesheet" href="../stylesheets/finance-dash-styles.css">
     </head>
     <body>
+
+        <!-- NAVBAR -->
         <nav class="navbar sticky-top custom-navbar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-2">
+
                         <!-- CLICK BUTTON FOR LEFT OFFCANVAS MENU -->
-                        <button class="btn custom-navbar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="margin-right: auto;">Menu</button>
-                                        
+                        <button class="btn custom-navbar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+                        
+                        <!-- OFFCANVAS DIV -->
                         <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             
                             <div class="custom-offcanvas-menu-options">
@@ -28,42 +32,54 @@
                                 <!-- DASHBOARD OPTIONS -->
                                 <div class="container offcanvas-dashboard-options text-center">
                                     <h3>Dashboards</h3>
+
+                                    <!-- Idea here is that each offcanvas dropdown option/each card on what I'll call the 'interactive dashboard pad' (main container div)
+                                    can open up into a fully expanded page to do more stuff with each category than you can on the primary Finance or
+                                    Inventory Management Dashboard. Think Firebase 'Functions',  'Hosting', 'Storage' options under the 'Build' dropdown on sidebar-->
                                     <div>
                                         <h6>Tasks</h6>
                                         <select name="Tasks">
-                                            <option value=""><a>Note View</a></option>
-                                            <option value=""><a>Kanban</a></option>
+                                            <!-- 'Sticky Notes' idea being that I have a separate dashboard dedicated to to-dos and maybe Kanban for personal projects, and then I
+                                            can label them for the relevant dashboard, and they will appear on the to-do card for that dashboard, and can be interacted with
+                                            (i.e. checkmark as done) -->
+                                            <option>Sticky Notes</option>
+                                            <option>Kanban</option>
                                         </select>
                                     </div>
                                     <div>
                                         <h6><a href="./finance-dash.html">Finance</a></h6>
+
                                         <select name="Finance">
-                                            <option value=""><a>To-Do</a></option>
-                                            <option value=""><a>Settings</a></option>
-                                            <option value=""><a>Charts</a></option>
-                                            <option value=""><a>Budget</a></option>
-                                            <option value=""><a>Statements</a></option>
-                                            <option value=""><a>Investments</a></option>
-                                            <option value=""><a>Retirement Portfolio</a></option>
+                                            <option>To-Do</option>
+                                            <option>Settings</option>
+                                            <option>Charts</option>
+                                            <option>Budget</option>
+                                            <option>Statements</option>
+                                            <option>Investments</option>
+                                            <option>Retirement Portfolio</option>
                                         </select>
                                     </div>
                                     <div>
                                         <h6><a href="./inventory-management-dash.html">Inventory Management</a></h6>
                                         <select name="Inventory Management">
-                                            <option value=""><a>To-Do</a></option>
-                                            <option value=""><a>Settings</a></option>
-                                            <option value=""><a>Search</a></option>
-                                            <option value=""><a>View/Manage Locations</a></option>
-                                            <option value=""><a>Statistics</a></option>
-                                            <option value=""><a>On-hands</a></option>
-                                            <option value=""><a>QR Code Generator</a></option>
+                                            <option>To-Do</option>
+                                            <option>Settings</option>
+                                            <option>Search</option>
+                                            <option>View/Manage Locations</option>
+                                            <option>Statistics</option>
+                                            <option>On-hands</option>
+                                            <option>QR Code Generator</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- BACK TO NAVBAR 'BUTTONS' -->
                     <div class="col-1"></div>
+
+                    <!-- Optify Logo (placeholder, anyway) -->
                     <div class="col-3">
                         <div class="container custom-branding-container">
                             <div class="container brand-logo-container">
@@ -73,41 +89,54 @@
                         </div>
                     </div>
                     <div class="col-1"></div>
+
+                    <!-- REST OF NAVBAR BUTTONS -->
                     <div class="col-2">
                         <button class="btn custom-navbar-btn" type="button"><a href="./login-page.html">Login</a></button>
                     </div>
                     <div class="col-2">
-                        <button class="btn custom-navbar-btn" type="button"><a href="#">Sign Up</a></button>
-
+                        <button class="btn custom-navbar-btn" type="button"><a href="./sign-up-page.html">Sign Up</a></button>
                     </div>
                 </div>
-                <!-- <button class="btn custom-navbar-btn" type="button" style="margin-right: auto;"><a href="./index.html">Optify</a></button> -->
-
-                <!-- OTHER NAVBAR BUTTONS -->
             </div>
         </nav>
         
-        <!-- Interactive Dashboard Pad -->
+        <!-- INTERACTIVE DASHBOARD PAD (interactive particularly meaning I want to make it user-editable down the line,
+        but I will definitely be leaving that for later. My presumption is that React will help with that? Idk)-->
         <div class="container-fluid text-center main-container">
             <div class="row custom-row-1">
                 <div class="col-4">
-                    <div class="card"><h3>To-Do</h3></div>
+                    <div class="card">
+                        <h3>To-Do</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Eveniet fuga repellat fugit similique numquam.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-6">
-                    <div class="card"><h3>Budgets</h3></div>
+                    <div class="card">
+                        <h3>Budgets</h3>
+                        <p>another table here</p>
+                    </div>
                 </div>
                 <div class="col-1">
                     <a href="#"><img src="../assets/Gear-PNG-Free-Image.png" alt="settings gear icon" height="75px" width="75px" id="settings-wheel"></a>
                 </div>
             </div>
             <div class="row custom-row-2">
-                <div class="col-12">
-                    <div class="card"><h3>Charts Dash</h3></div>
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card">
+                        <h3>Charts Dash</h3>
+                        <p>imagination is a wonderful tool</p>
+                </div>
+                <div class="col-1"></div>
                 </div>
             </div>
             <div class="row custom-row-3">
-                <div class="col-7">
+                <div class="col-6">
                     <div class="card">
                         <h3>Statements</h3>
                         <table>
@@ -153,11 +182,15 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-1"></div>
+                <div class="col-2"></div>
                 <div class="col-3">
                     <div class="card">
-                        <div><h5>Investments</h5></div>
-                        <div><h5>Retirement Portfolios</h5></div>
+                        <div class="mb-5">
+                            <h5>Investment Portfolio</h5>
+                        </div>
+                        <div>
+                            <h5>Retirement Portfolio</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="col-1"></div>
